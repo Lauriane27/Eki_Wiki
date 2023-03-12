@@ -64,6 +64,12 @@ Here is notes that I took while watching
 > 9. cd into bookstack folder and run 
 >       echo @php "%~dp0composer.phar" %*>composer.bat
 >       composer install --no-dev.
+And this message indicates you succeed.
+           INFO  Application cache cleared successfully.
+
+        > @php artisan view:clear
+
+           INFO  Compiled views cleared successfully.
 > 10. Copy the .env.example file to .env and fill with your own database and mail details.
 > 11. Ensure the storage, bootstrap/cache & public/uploads folders are writable by the web server ([More information here](https://www.bookstackapp.com/docs/admin/filesystem-permissions/).
 > 11. In the application root, Run php artisan key:
