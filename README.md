@@ -78,8 +78,7 @@ And this message indicates you succeed.
 > If not using Apache or if .htaccess files are disabled you will have to create some URL rewrite rules as shown below.
 > Set the web root on your server to point to the BookStack public folder. This is done with the root setting on Nginx or the DocumentRoot setting on Apache.
 > Go to the control panel and open config> <browse>[Apache] : go to C:\xampp\apache\conf\extra
-> Open "httpd-vhosts.conf" and change:
-    ##<VirtualHost *:80> to ##<VirtualHost *:8080>
+> Open "httpd-vhosts.conf" and replace the <VirtualHost *:80>...</VirtualHost> part by the file called config in this git.
 > Run php artisan migrate to update the database.
 > Done! You can now login using the default admin details admin@admin.com with a password of password. You should change these details immediately after logging in for the first time.
 > 
