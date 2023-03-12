@@ -70,7 +70,7 @@ And this message indicates you succeed.
         > @php artisan view:clear
 
            INFO  Compiled views cleared successfully.
-> 10. In C:\xampp\htdocs\bookstack: Copy the .env.example file to .env and fill the **# Database details** section with your own database and mail details.
+> 10. In C:\xampp\htdocs\bookstack: Copy the .env.example file to .env and fill the **# Database details** section with your own database and mail details, and modify APP_URL=http://example.com to APP_URL=http://localhost:8080
 > 11. Ensure the storage, bootstrap/cache & public/uploads folders are writable by the web server ([More information here](https://www.bookstackapp.com/docs/admin/filesystem-permissions/).
 > 11. In the application root( c:\xampp\htdocs\bookstack), Run:
 >      php artisan key:generate
