@@ -50,7 +50,9 @@ Here is notes that I took while watching
 > 
 > 3. Go to git-scm.com and download git
 > 4. Go to getcomposer.org and download composer
+>    go to C:\ProgramData\ComposerSetup\bin and move composer.phar into the folder C:\xampp
 > 5. Open XAMPP Control Pannel,
+>   Click Config of the row of Apache and choose php.ini: open with bloc-note and remove the ";" in front of "extension=gd", "extension=ldap" and "extension=zip"
 >   Start Apache
 >   Start MySQL 
 > 6. Open > click shell :
@@ -60,7 +62,8 @@ Here is notes that I took while watching
     git clone https://github.com/BookStackApp/BookStack.git --branch release --single-branch
 > 8. Rename the folder cloned into lowercase
 > 9. cd into bookstack folder and run 
->     composer install --no-dev.
+>       echo @php "%~dp0composer.phar" %*>composer.bat
+>       composer install --no-dev.
 > 10. Copy the .env.example file to .env and fill with your own database and mail details.
 > 11. Ensure the storage, bootstrap/cache & public/uploads folders are writable by the web server ([More information here](https://www.bookstackapp.com/docs/admin/filesystem-permissions/).
 > 11. In the application root, Run php artisan key:
