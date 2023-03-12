@@ -70,12 +70,16 @@ And this message indicates you succeed.
         > @php artisan view:clear
 
            INFO  Compiled views cleared successfully.
-> 10. Copy the .env.example file to .env and fill with your own database and mail details.
+> 10. In C:\xampp\htdocs\bookstack: Copy the .env.example file to .env and fill the **# Database details** section with your own database and mail details.
 > 11. Ensure the storage, bootstrap/cache & public/uploads folders are writable by the web server ([More information here](https://www.bookstackapp.com/docs/admin/filesystem-permissions/).
-> 11. In the application root, Run php artisan key:
->     generate to generate a unique application key.
+> 11. In the application root( c:\xampp\htdocs\bookstack), Run:
+>      php artisan key:generate
+> to generate a unique application key.
 > If not using Apache or if .htaccess files are disabled you will have to create some URL rewrite rules as shown below.
 > Set the web root on your server to point to the BookStack public folder. This is done with the root setting on Nginx or the DocumentRoot setting on Apache.
+> Go to the control panel and open config> <browse>[Apache] : go to C:\xampp\apache\conf\extra
+> Open "httpd-vhosts.conf" and change:
+    ##<VirtualHost *:80> to ##<VirtualHost *:8080>
 > Run php artisan migrate to update the database.
 > Done! You can now login using the default admin details admin@admin.com with a password of password. You should change these details immediately after logging in for the first time.
 > 
