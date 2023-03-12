@@ -50,7 +50,7 @@ Here is notes that I took while watching
 > 
 > 3. Go to git-scm.com and download git
 > 4. Go to getcomposer.org and download composer
->    go to C:\ProgramData\ComposerSetup\bin and move composer.phar into the folder C:\xampp
+>    go to C:\ProgramData\ComposerSetup\bin and move composer.phar into the folder C:\xampp\htdocs\bookstack\
 > 5. Open XAMPP Control Pannel,
 >   Click Config of the row of Apache and choose php.ini: open with bloc-note and remove the ";" in front of "extension=gd", "extension=ldap" and "extension=zip"
 >   Start Apache
